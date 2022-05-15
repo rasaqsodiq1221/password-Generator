@@ -10,34 +10,35 @@
      <title>password Generator</title>
  </head>
  <body>
-    <header>
+    <header class="container">
         <div class="tooltip">
             <i class="fas fa-moon" id="icon"></i>
             <span class="tooltipText">Toggle Dark Mode</span>
         </div>
     </header>
-    <section class="generatePassword">
-        <div>
-            <h1>Generate a <span>random password</span></h1>
+    <section class="generatePassword container">
+        <div class="mainContent">
+            <h1>Generate a</h1>
+            <h1 id="randomPassword">random password</h1>
             <p>Never use an insecure password again.</p>
         </div>
         <form action="">
-            <label for="">Enter password length (optional)</label>
+            <label for="">Enter password length: <br> (optional)</label>
             <input type="number" name="passwordLength" id="passwordLength">
 
-            <button>
-                <img src="/images/flashIcon.svg" alt="flashIcon">
-                Generate passwords
+            <button class="generatebtn">
+                <img src="/images/flashIcon.svg" alt="flashIcon" id="flashIcon">
+                <span>Generate passwords</span>
             </button>
         </form>
     </section>
     <!-- <img src="/images/hrLine.svg" alt="horizontal line"> -->
-    <hr>
-    <section class="outputPassword">
-        <button><img src="/images/3dotsIcon.svg" alt="3 dots"></button>
-        <button><img src="/images/3dotsIcon.svg" alt="3 dots"></button>
-        <button><img src="/images/3dotsIcon.svg" alt="3 dots"></button>
-        <button><img src="/images/3dotsIcon.svg" alt="3 dots"></button>
+    <hr class="container" id="hr">
+    <section class="outputPassword container">
+        <button><img src="/images/3dotsIcon.svg" alt="3 dots" id="threeDots"></button>
+        <button><img src="/images/3dotsIcon.svg" alt="3 dots" id="threeDots"></button>
+        <button><img src="/images/3dotsIcon.svg" alt="3 dots" id="threeDots"></button>
+        <button><img src="/images/3dotsIcon.svg" alt="3 dots" id="threeDots"></button>
     </section>
     <script src="/script.js"></script>
  </body>
