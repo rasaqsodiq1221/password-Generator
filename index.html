@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+     <title>password Generator</title>
+ </head>
+ <body>
+    <header>
+        <div class="tooltip">
+            <i class="fas fa-moon" id="icon"></i>
+            <span class="tooltipText">Toggle Dark Mode</span>
+        </div>
+    </header>
+    <section class="generatePassword">
+        <div>
+            <h1>Generate a <span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+        </div>
+        <form action="">
+            <label for="">Enter password length (optional)</label>
+            <input type="number" name="passwordLength" id="passwordLength">
+
+            <button>
+                <img src="/images/flashIcon.svg" alt="flashIcon">
+                Generate passwords
+            </button>
+        </form>
+    </section>
+    <!-- <img src="/images/hrLine.svg" alt="horizontal line"> -->
+    <hr>
+    <section class="outputPassword">
+        <button><img src="/images/3dotsIcon.svg" alt="3 dots"></button>
+        <button><img src="/images/3dotsIcon.svg" alt="3 dots"></button>
+        <button><img src="/images/3dotsIcon.svg" alt="3 dots"></button>
+        <button><img src="/images/3dotsIcon.svg" alt="3 dots"></button>
+    </section>
+    <script src="/script.js"></script>
+ </body>
+ </html>
