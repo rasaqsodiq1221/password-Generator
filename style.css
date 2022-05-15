@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #ECFDF5;
+    --secondary-color: #1F2937;
+    --text-primary-color: #fff;
+    --text-secondary-color: #273549;
+    --content-primary-color: #10B981;
+    --content-secondary-color: #55F991;
+}
+
+.darkTheme {
+    --primary-color: #1F2937;
+    --secondary-color: #ECFDF5;
+    --text-primary-color: #273549;
+    --text-secondary-color: #fff;
+    --content-primary-color: #55F991;
+    --content-secondary-color: #10B981;
+}
