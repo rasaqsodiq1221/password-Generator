@@ -169,6 +169,11 @@ img {
     font-weight: 600;
 }
 
+.outputPassword > *:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 #threeDots {
     width: 20px;
     height: 5px;

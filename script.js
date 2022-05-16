@@ -31,7 +31,7 @@ generatePasswordBtn.addEventListener('click', generateRandomPassword);
 
 function generatePassword() {
     let unitLength = passwordLength.value;
-    console.log(unitLength)
+    
     let password = '';
 
     if (unitLength === '') {
@@ -57,4 +57,17 @@ function generateRandomPassword() {
     thirdBtn.textContent = generatePassword()
     fourthBtn.textContent = generatePassword()
 
+}
+
+function copyTextA() {
+    navigator.clipboard.writeText(firstBtn.textContent)
+}
+function copyTextB() {
+    navigator.clipboard.writeText(secondBtn.textContent)
+}
+function copyTextC() {
+    navigator.clipboard.writeText(thirdBtn.textContent)
+}
+function copyTextD() {
+    navigator.clipboard.writeText(fourthBtn.textContent)
 }
