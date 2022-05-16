@@ -35,13 +35,15 @@ function generatePassword() {
     let password = '';
 
     if (unitLength === '') {
-        for (let i = 0; i < 11; i++) {
-            password += characters[Math.floor(Math.random() * (characters.length + 1))]
+        for (let i = 0; i < 10; i++) {
+            password += characters[Math.floor(Math.random() * (characters.length))]
         }
         return password
+    } else if (unitLength === "0") {
+        alert('put a value or generate 10 digits password automatically!')
     } else {
         for (let i = 0; i < unitLength; i++) {
-            password += characters[Math.floor(Math.random() * (characters.length + 1))]
+            password += characters[Math.floor(Math.random() * (characters.length))]
         }
         return password
     }
