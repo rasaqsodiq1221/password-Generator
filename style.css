@@ -198,7 +198,7 @@ img {
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 150%;
+    bottom: 125%;
     left: 50%;
     margin-left: -75px;
     opacity: 0;
