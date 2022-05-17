@@ -18,6 +18,11 @@ let thirdBtn = document.getElementById('thirdBtn');
 let fourthBtn = document.getElementById('fourthBtn');
 let passwordLength = document.getElementById('passwordLength');
 let generatePasswordBtn = document.getElementById('generatePasswordBtn');
+let toolTipA = document.getElementsByClassName('tool');
+let toolTipTextA = document.getElementById('toolTipTextA');
+
+
+
 
 
 let characters = [];
@@ -51,12 +56,32 @@ function generatePassword() {
 }
 
 
+
+
 function generateRandomPassword() {
     firstBtn.textContent = generatePassword()
     secondBtn.textContent = generatePassword()
     thirdBtn.textContent = generatePassword()
     fourthBtn.textContent = generatePassword()
 
+    toolTipA.forEach(addToolTip)
+    
+    
+}
+
+function addToolTip() {
+    
+    toolTipA.classList.add('toolTipA');
+    let span = document.createElement('span');
+    span.className = 'toolTipTextA';
+
+    let node = document.createTextNode('Copy to Clipboard');
+    span.appendChild(node);
+
+
+    toolTipA.appendChild(span);
+
+// toolTipTextA.classList.toggle('toolTipTextA');
 }
 
 function copyTextA() {
