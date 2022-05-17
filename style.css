@@ -178,6 +178,11 @@ img {
     cursor: pointer;
 }
 
+.btn:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
 #threeDots {
     width: 20px;
     height: 5px;
@@ -216,7 +221,7 @@ img {
     border-color: var(--text-primary-color) transparent transparent transparent;
   }
   
-  .toolTipA:hover .toolTipTextA {
+  .toolTipA:active .toolTipTextA {
     visibility: visible;
     opacity: 1;
   }
