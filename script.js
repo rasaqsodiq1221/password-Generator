@@ -73,7 +73,7 @@ function generateRandomPassword() {
             let span = document.createElement('span');
             span.className = 'toolTipTextA';
         
-            let node = document.createTextNode('Copy to Clipboard');
+            let node = document.createTextNode('Copied!');
             span.appendChild(node);
         
         
