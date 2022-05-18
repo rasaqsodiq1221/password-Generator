@@ -221,7 +221,7 @@ img {
     border-color: var(--text-primary-color) transparent transparent transparent;
   }
   
-  .toolTipA:active .toolTipTextA {
+  .toolTipA:hover .toolTipTextA {
     visibility: visible;
     opacity: 1;
   }

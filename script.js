@@ -73,7 +73,7 @@ function generateRandomPassword() {
             let span = document.createElement('span');
             span.className = 'toolTipTextA';
         
-            let node = document.createTextNode('Copied!');
+            let node = document.createTextNode('Copy to Clipboard');
             span.appendChild(node);
         
         
@@ -85,29 +85,19 @@ function generateRandomPassword() {
     
 }
 
-/* function addToolTip() {
-    toolTipA[i].classList.add('toolTipA');
-    let span = document.createElement('span');
-    span.className = 'toolTipTextA';
-
-    let node = document.createTextNode('Copy to Clipboard');
-    span.appendChild(node);
-
-
-    toolTipA[i].appendChild(span);
-
-// toolTipTextA.classList.toggle('toolTipTextA');
-}
- */
 function copyTextA() {
     navigator.clipboard.writeText(firstBtn.textContent)
+    alert('copied to Clipboard');
 }
 function copyTextB() {
     navigator.clipboard.writeText(secondBtn.textContent)
+    alert('copied to Clipboard');
 }
 function copyTextC() {
     navigator.clipboard.writeText(thirdBtn.textContent)
+    alert('copied to Clipboard');
 }
 function copyTextD() {
     navigator.clipboard.writeText(fourthBtn.textContent)
+    alert('copied to Clipboard');
 }
