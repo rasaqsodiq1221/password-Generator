@@ -35,6 +35,9 @@ for (let i=32; i<127; i++) {
 
 
 generatePasswordBtn.addEventListener('click', generateRandomPassword);
+passwordLength.addEventListener('focus', function(){
+    passwordLength.value = "";
+})
 
 function generatePassword() {
     let unitLength = passwordLength.value;
